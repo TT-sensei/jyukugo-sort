@@ -31,14 +31,14 @@ window.LEVEL_DATA={
     "name":"四字熟語・まとまり",
     "description":"一字の語の集まりか、いくつかの語の組み合わせかを見抜く",
     "categorySet":"long",
-    "fallSpeed":105,
+    "fallSpeed":78,
     "questions":8
   },
   "6":{
     "name":"四字以上・まとまり",
     "description":"長い熟語を意味のまとまりで仕分ける",
     "categorySet":"long",
-    "fallSpeed":115,
+    "fallSpeed":84,
     "questions":8
   }
 };
