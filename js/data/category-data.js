@@ -1,25 +1,18 @@
-window.CATEGORY_DATA={
-  "similar": {
-    "label": "似た意味",
-    "hint": "二つの漢字の意味が近い"
+window.CATEGORY_SETS={
+  two:{
+    "similar":{label:"似た意味",hint:"同じような意味の漢字を合わせたもの"},
+    "opposite":{label:"対の意味",hint:"反対・対になる意味の漢字を合わせたもの"},
+    "modify":{label:"上が下を説明",hint:"上の漢字が下の漢字を説明する"},
+    "object":{label:"下が「を・に」",hint:"下の漢字が動作の対象・目的になる"}
   },
-  "opposite": {
-    "label": "対の意味",
-    "hint": "反対・対になる"
+  three:{
+    "prefix":{label:"一字＋二字",hint:"頭に一字がつく"},
+    "suffix":{label:"二字＋一字",hint:"後ろに一字がつく"},
+    "series":{label:"一字の語の集まり",hint:"一字の語を並べたもの"}
   },
-  "modify": {
-    "label": "上が下を説明",
-    "hint": "「AのB」「AいB」"
-  },
-  "object": {
-    "label": "下が「を・に」",
-    "hint": "動作の対象・行き先"
+  long:{
+    "series":{label:"一字の語の集まり",hint:"一字の語を並べたもの"},
+    "compound":{label:"いくつかの語の組み合わせ",hint:"二字＋二字など、意味のまとまりを組み合わせたもの"}
   }
 };
-window.RELATION_DATA={
-  "prefixNegation": "前の一字が意味を打ち消す・限定する",
-  "suffixPlace": "後ろの一字が場所を表す",
-  "suffixEvent": "後ろの一字が集まり・行事を表す",
-  "suffixChange": "後ろの一字が変化を表す",
-  "suffixQuality": "後ろの一字が性質を表す"
-};
+window.CATEGORY_DATA=CATEGORY_SETS.two;
