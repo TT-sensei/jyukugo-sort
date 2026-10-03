@@ -3,14 +3,14 @@ window.LEVEL_DATA={
     "name": "二字熟語・基本",
     "description": "4つの成り立ちを、ゆっくり仕分ける",
     "mode": "category",
-    "fallSpeed": 11,
+    "fallSpeed": 70,
     "questions": 8
   },
   "2": {
     "name": "二字熟語・混合",
     "description": "4分類を混ぜて、関係を見抜く",
     "mode": "category",
-    "fallSpeed": 14,
+    "fallSpeed": 95,
     "questions": 12
   },
   "3": {
