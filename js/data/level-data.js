@@ -17,28 +17,28 @@ window.LEVEL_DATA={
     "name": "三字熟語・区切り",
     "description": "一字＋二字か、二字＋一字かを見抜く",
     "mode": "split",
-    "fallSpeed": 0,
+    "fallSpeed": 85,
     "questions": 8
   },
   "4": {
     "name": "三字熟語・応用",
     "description": "区切りを見つけ、まとまりの関係も考える",
     "mode": "splitRelation",
-    "fallSpeed": 0,
+    "fallSpeed": 95,
     "questions": 8
   },
   "5": {
     "name": "四字熟語・まとまり",
     "description": "一字ずつか、二字＋二字かを見抜く",
     "mode": "structure",
-    "fallSpeed": 0,
+    "fallSpeed": 105,
     "questions": 8
   },
   "6": {
     "name": "四字以上・まとまり",
     "description": "長い熟語を意味のまとまりに分ける",
     "mode": "parts",
-    "fallSpeed": 0,
+    "fallSpeed": 115,
     "questions": 8
   }
 };
