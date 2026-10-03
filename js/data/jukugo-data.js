@@ -114,8 +114,8 @@ window.JUKUGO_DATA=[
     "level": 2,
     "answer": "similar",
     "category": "similar",
-    "relation": "価＋値",
-    "explanation": "二つの漢字は、ねうちに関わる近い意味。",
+    "relation": "価｜値",
+    "explanation": "「価」と「値」は、どちらも「ねうち」を表す近い意味の漢字。",
     "split": "価｜値",
     "categorySet": "two"
   },
@@ -126,8 +126,8 @@ window.JUKUGO_DATA=[
     "level": 2,
     "answer": "opposite",
     "category": "opposite",
-    "relation": "増える＋減る",
-    "explanation": "「増」と「減」は反対の意味。",
+    "relation": "増える｜減る",
+    "explanation": "「増える」と「減る」は反対の意味。",
     "split": "増える｜減る",
     "categorySet": "two"
   },
@@ -138,8 +138,8 @@ window.JUKUGO_DATA=[
     "level": 2,
     "answer": "opposite",
     "category": "opposite",
-    "relation": "縦＋横",
-    "explanation": "「縦」と「横」は対になる意味。",
+    "relation": "縦｜横",
+    "explanation": "「縦」と「横」は、たがいに対になる意味。",
     "split": "縦｜横",
     "categorySet": "two"
   },
@@ -510,8 +510,8 @@ window.JUKUGO_DATA=[
     "level": 6,
     "answer": "compound",
     "category": "compound",
-    "relation": "高速道路＋網",
-    "explanation": "「高速道路」と「網」という意味のまとまりを組み合わせている。",
+    "relation": "高速道路｜網",
+    "explanation": "「網」は、道路が広くつながっているようすを表している。「高速道路」と「網」で意味のまとまりを組み合わせている。",
     "split": "高速道路｜網",
     "categorySet": "long"
   },
@@ -726,9 +726,9 @@ window.JUKUGO_DATA=[
     "level": 1,
     "answer": "similar",
     "category": "similar",
-    "relation": "清／潔",
+    "relation": "清｜潔",
     "categorySet": "two",
-    "explanation": "「清い」と「潔い」は、どちらもよごれがなくきれいなことを表している。",
+    "explanation": "「清」と「潔」は、どちらも「きれい・よごれがない」ことに関係する漢字。",
     "split": "清｜潔"
   },
   {
