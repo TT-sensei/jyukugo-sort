@@ -402,7 +402,7 @@ window.JUKUGO_DATA=[
       "不可｜能"
     ],
     "relation": "不 ＋ 可能",
-    "explanation": "不可能ではないことを表す。",
+    "explanation": "「不」が「可能」の意味を打ち消し、可能ではないことを表す。",
     "structureAnswer": "prefixNegation",
     "relationChoices": [
       "prefixNegation",
