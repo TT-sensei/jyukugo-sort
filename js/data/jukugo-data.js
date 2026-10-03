@@ -5,33 +5,11 @@ window.JUKUGO_DATA=[
     "reading": "かんれい",
     "level": 1,
     "answer": "similar",
-    "choices": [
-      "similar",
-      "opposite",
-      "modify",
-      "object"
-    ],
-    "relation": "寒い・冷たい",
+    "category": "similar",
+    "relation": "寒い＋冷たい",
     "explanation": "「寒」と「冷」は、温度が低いことを表す近い意味。",
-    "category": "similar",
-    "split": "寒｜冷"
-  },
-  {
-    "id": "L1-道路",
-    "word": "道路",
-    "reading": "どうろ",
-    "level": 1,
-    "answer": "similar",
-    "choices": [
-      "similar",
-      "opposite",
-      "modify",
-      "object"
-    ],
-    "relation": "道・路",
-    "explanation": "「道」と「路」は、どちらもみちを表す。",
-    "category": "similar",
-    "split": "道｜路"
+    "split": "寒い｜冷たい",
+    "categorySet": "two"
   },
   {
     "id": "L1-長短",
@@ -39,33 +17,11 @@ window.JUKUGO_DATA=[
     "reading": "ちょうたん",
     "level": 1,
     "answer": "opposite",
-    "choices": [
-      "similar",
-      "opposite",
-      "modify",
-      "object"
-    ],
-    "relation": "長い ↔ 短い",
-    "explanation": "「長」と「短」は反対の意味。",
     "category": "opposite",
-    "split": "長｜短"
-  },
-  {
-    "id": "L1-明暗",
-    "word": "明暗",
-    "reading": "めいあん",
-    "level": 1,
-    "answer": "opposite",
-    "choices": [
-      "similar",
-      "opposite",
-      "modify",
-      "object"
-    ],
-    "relation": "明るい ↔ 暗い",
-    "explanation": "「明」と「暗」は反対の意味。",
-    "category": "opposite",
-    "split": "明｜暗"
+    "relation": "長い＋短い",
+    "explanation": "「長」と「短」は対になる意味。",
+    "split": "長い｜短い",
+    "categorySet": "two"
   },
   {
     "id": "L1-山頂",
@@ -73,33 +29,11 @@ window.JUKUGO_DATA=[
     "reading": "さんちょう",
     "level": 1,
     "answer": "modify",
-    "choices": [
-      "similar",
-      "opposite",
-      "modify",
-      "object"
-    ],
+    "category": "modify",
     "relation": "山の頂",
-    "explanation": "上の「山」が下の「頂」を説明する。",
-    "category": "modify",
-    "split": "山｜頂"
-  },
-  {
-    "id": "L1-月光",
-    "word": "月光",
-    "reading": "げっこう",
-    "level": 1,
-    "answer": "modify",
-    "choices": [
-      "similar",
-      "opposite",
-      "modify",
-      "object"
-    ],
-    "relation": "月の光",
-    "explanation": "上の「月」が下の「光」を説明する。",
-    "category": "modify",
-    "split": "月｜光"
+    "explanation": "「山」が「頂」を説明している。",
+    "split": "山の頂",
+    "categorySet": "two"
   },
   {
     "id": "L1-洗顔",
@@ -107,16 +41,47 @@ window.JUKUGO_DATA=[
     "reading": "せんがん",
     "level": 1,
     "answer": "object",
-    "choices": [
-      "similar",
-      "opposite",
-      "modify",
-      "object"
-    ],
-    "relation": "顔を洗う",
-    "explanation": "下の「顔」が「洗う」という動作の対象。",
     "category": "object",
-    "split": "洗｜顔"
+    "relation": "顔を洗う",
+    "explanation": "「顔」が「洗う」という動作の対象になる。",
+    "split": "顔を洗う",
+    "categorySet": "two"
+  },
+  {
+    "id": "L1-道路",
+    "word": "道路",
+    "reading": "どうろ",
+    "level": 1,
+    "answer": "similar",
+    "category": "similar",
+    "relation": "道＋路",
+    "explanation": "「道」と「路」は、どちらもみちを表す。",
+    "split": "道｜路",
+    "categorySet": "two"
+  },
+  {
+    "id": "L1-明暗",
+    "word": "明暗",
+    "reading": "めいあん",
+    "level": 1,
+    "answer": "opposite",
+    "category": "opposite",
+    "relation": "明るい＋暗い",
+    "explanation": "「明」と「暗」は反対の意味。",
+    "split": "明るい｜暗い",
+    "categorySet": "two"
+  },
+  {
+    "id": "L1-月光",
+    "word": "月光",
+    "reading": "げっこう",
+    "level": 1,
+    "answer": "modify",
+    "category": "modify",
+    "relation": "月の光",
+    "explanation": "「月」が「光」を説明している。",
+    "split": "月の光",
+    "categorySet": "two"
   },
   {
     "id": "L1-入場",
@@ -124,16 +89,11 @@ window.JUKUGO_DATA=[
     "reading": "にゅうじょう",
     "level": 1,
     "answer": "object",
-    "choices": [
-      "similar",
-      "opposite",
-      "modify",
-      "object"
-    ],
-    "relation": "場に入る",
-    "explanation": "下の「場」が「入る」という動作の行き先。",
     "category": "object",
-    "split": "入｜場"
+    "relation": "場に入る",
+    "explanation": "「場」が「入る」という動作の行き先になる。",
+    "split": "場に入る",
+    "categorySet": "two"
   },
   {
     "id": "L2-労働",
@@ -141,16 +101,11 @@ window.JUKUGO_DATA=[
     "reading": "ろうどう",
     "level": 2,
     "answer": "similar",
-    "choices": [
-      "similar",
-      "opposite",
-      "modify",
-      "object"
-    ],
-    "relation": "労する・働く",
-    "explanation": "二つの漢字は、はたらくことに関わる近い意味。",
     "category": "similar",
-    "split": "労｜働"
+    "relation": "労する＋働く",
+    "explanation": "二つの漢字は、はたらくことに関わる近い意味。",
+    "split": "労する｜働く",
+    "categorySet": "two"
   },
   {
     "id": "L2-価値",
@@ -158,16 +113,11 @@ window.JUKUGO_DATA=[
     "reading": "かち",
     "level": 2,
     "answer": "similar",
-    "choices": [
-      "similar",
-      "opposite",
-      "modify",
-      "object"
-    ],
-    "relation": "価・値",
-    "explanation": "二つの漢字は、ねうちに関わる近い意味。",
     "category": "similar",
-    "split": "価｜値"
+    "relation": "価＋値",
+    "explanation": "二つの漢字は、ねうちに関わる近い意味。",
+    "split": "価｜値",
+    "categorySet": "two"
   },
   {
     "id": "L2-増減",
@@ -175,16 +125,11 @@ window.JUKUGO_DATA=[
     "reading": "ぞうげん",
     "level": 2,
     "answer": "opposite",
-    "choices": [
-      "similar",
-      "opposite",
-      "modify",
-      "object"
-    ],
-    "relation": "増える ↔ 減る",
-    "explanation": "「増」と「減」は反対の意味。",
     "category": "opposite",
-    "split": "増｜減"
+    "relation": "増える＋減る",
+    "explanation": "「増」と「減」は反対の意味。",
+    "split": "増える｜減る",
+    "categorySet": "two"
   },
   {
     "id": "L2-縦横",
@@ -192,16 +137,11 @@ window.JUKUGO_DATA=[
     "reading": "じゅうおう",
     "level": 2,
     "answer": "opposite",
-    "choices": [
-      "similar",
-      "opposite",
-      "modify",
-      "object"
-    ],
-    "relation": "たて ↔ よこ",
-    "explanation": "「縦」と「横」は対になる意味。",
     "category": "opposite",
-    "split": "縦｜横"
+    "relation": "縦＋横",
+    "explanation": "「縦」と「横」は対になる意味。",
+    "split": "縦｜横",
+    "categorySet": "two"
   },
   {
     "id": "L2-古都",
@@ -209,16 +149,11 @@ window.JUKUGO_DATA=[
     "reading": "こと",
     "level": 2,
     "answer": "modify",
-    "choices": [
-      "similar",
-      "opposite",
-      "modify",
-      "object"
-    ],
-    "relation": "古い都",
-    "explanation": "上の「古」が下の「都」を説明する。",
     "category": "modify",
-    "split": "古｜都"
+    "relation": "古い都",
+    "explanation": "「古」が「都」を説明している。",
+    "split": "古い都",
+    "categorySet": "two"
   },
   {
     "id": "L2-車内",
@@ -226,16 +161,11 @@ window.JUKUGO_DATA=[
     "reading": "しゃない",
     "level": 2,
     "answer": "modify",
-    "choices": [
-      "similar",
-      "opposite",
-      "modify",
-      "object"
-    ],
-    "relation": "車の内",
-    "explanation": "上の「車」が下の「内」を説明する。",
     "category": "modify",
-    "split": "車｜内"
+    "relation": "車の内",
+    "explanation": "「車」が「内」を説明している。",
+    "split": "車の内",
+    "categorySet": "two"
   },
   {
     "id": "L2-読書",
@@ -243,16 +173,11 @@ window.JUKUGO_DATA=[
     "reading": "どくしょ",
     "level": 2,
     "answer": "object",
-    "choices": [
-      "similar",
-      "opposite",
-      "modify",
-      "object"
-    ],
-    "relation": "書（本）を読む",
-    "explanation": "下の「書」が「読む」という動作の対象。",
     "category": "object",
-    "split": "読｜書"
+    "relation": "書を読む",
+    "explanation": "「書」が「読む」という動作の対象になる。",
+    "split": "書を読む",
+    "categorySet": "two"
   },
   {
     "id": "L2-消火",
@@ -260,607 +185,394 @@ window.JUKUGO_DATA=[
     "reading": "しょうか",
     "level": 2,
     "answer": "object",
-    "choices": [
-      "similar",
-      "opposite",
-      "modify",
-      "object"
-    ],
-    "relation": "火を消す",
-    "explanation": "下の「火」が「消す」という動作の対象。",
     "category": "object",
-    "split": "消｜火"
+    "relation": "火を消す",
+    "explanation": "「火」が「消す」という動作の対象になる。",
+    "split": "火を消す",
+    "categorySet": "two"
+  },
+  {
+    "id": "L3-低学年",
+    "word": "低学年",
+    "reading": "ていがくねん",
+    "level": 3,
+    "answer": "prefix",
+    "category": "prefix",
+    "relation": "低＋学年",
+    "explanation": "「低」が「学年」を限定している。",
+    "split": "低｜学年",
+    "categorySet": "three"
+  },
+  {
+    "id": "L3-新記録",
+    "word": "新記録",
+    "reading": "しんきろく",
+    "level": 3,
+    "answer": "prefix",
+    "category": "prefix",
+    "relation": "新＋記録",
+    "explanation": "「新」が「記録」の性質を限定している。",
+    "split": "新｜記録",
+    "categorySet": "three"
+  },
+  {
+    "id": "L3-高性能",
+    "word": "高性能",
+    "reading": "こうせいのう",
+    "level": 3,
+    "answer": "prefix",
+    "category": "prefix",
+    "relation": "高＋性能",
+    "explanation": "「高」が「性能」の程度を表している。",
+    "split": "高｜性能",
+    "categorySet": "three"
+  },
+  {
+    "id": "L3-急接近",
+    "word": "急接近",
+    "reading": "きゅうせっきん",
+    "level": 3,
+    "answer": "prefix",
+    "category": "prefix",
+    "relation": "急＋接近",
+    "explanation": "「急」が接近の様子を表している。",
+    "split": "急｜接近",
+    "categorySet": "three"
   },
   {
     "id": "L3-不安定",
     "word": "不安定",
     "reading": "ふあんてい",
     "level": 3,
-    "answer": "不｜安定",
-    "choices": [
-      "不｜安定",
-      "不安｜定"
-    ],
-    "relation": "「不」＋「安定」",
+    "answer": "prefix",
+    "category": "prefix",
+    "relation": "不＋安定",
     "explanation": "「不」が「安定」の意味を打ち消す。",
-    "structure": "oneTwo",
-    "split": "不｜安定"
+    "split": "不｜安定",
+    "categorySet": "three"
   },
   {
     "id": "L3-未解決",
     "word": "未解決",
     "reading": "みかいけつ",
     "level": 3,
-    "answer": "未｜解決",
-    "choices": [
-      "未｜解決",
-      "未解｜決"
-    ],
-    "relation": "「未」＋「解決」",
+    "answer": "prefix",
+    "category": "prefix",
+    "relation": "未＋解決",
     "explanation": "「未」が、まだ解決していないことを表す。",
-    "structure": "oneTwo",
-    "split": "未｜解決"
+    "split": "未｜解決",
+    "categorySet": "three"
   },
   {
     "id": "L3-無意識",
     "word": "無意識",
     "reading": "むいしき",
     "level": 3,
-    "answer": "無｜意識",
-    "choices": [
-      "無｜意識",
-      "無意｜識"
-    ],
-    "relation": "「無」＋「意識」",
+    "answer": "prefix",
+    "category": "prefix",
+    "relation": "無＋意識",
     "explanation": "「無」が、意識がないことを表す。",
-    "structure": "oneTwo",
-    "split": "無｜意識"
+    "split": "無｜意識",
+    "categorySet": "three"
   },
   {
     "id": "L3-非公開",
     "word": "非公開",
     "reading": "ひこうかい",
     "level": 3,
-    "answer": "非｜公開",
-    "choices": [
-      "非｜公開",
-      "非公｜開"
-    ],
-    "relation": "「非」＋「公開」",
-    "explanation": "「非」が、公開しないことを表す。",
-    "structure": "oneTwo",
-    "split": "非｜公開"
+    "answer": "prefix",
+    "category": "prefix",
+    "relation": "非＋公開",
+    "explanation": "「非」が、公開ではないことを表す。",
+    "split": "非｜公開",
+    "categorySet": "three"
   },
   {
-    "id": "L3-運動場",
+    "id": "L4-運動場",
     "word": "運動場",
     "reading": "うんどうじょう",
-    "level": 3,
-    "answer": "運動｜場",
-    "choices": [
-      "運動｜場",
-      "運｜動場"
-    ],
-    "relation": "「運動」＋「場」",
+    "level": 4,
+    "answer": "suffix",
+    "category": "suffix",
+    "relation": "運動＋場",
     "explanation": "運動をする場所を表す。",
-    "structure": "twoOne",
-    "split": "運動｜場"
+    "split": "運動｜場",
+    "categorySet": "three"
   },
   {
-    "id": "L3-発表会",
+    "id": "L4-加盟国",
+    "word": "加盟国",
+    "reading": "かめいこく",
+    "level": 4,
+    "answer": "suffix",
+    "category": "suffix",
+    "relation": "加盟＋国",
+    "explanation": "加盟している国を表す。",
+    "split": "加盟｜国",
+    "categorySet": "three"
+  },
+  {
+    "id": "L4-発表会",
     "word": "発表会",
     "reading": "はっぴょうかい",
-    "level": 3,
-    "answer": "発表｜会",
-    "choices": [
-      "発表｜会",
-      "発｜表会"
-    ],
-    "relation": "「発表」＋「会」",
+    "level": 4,
+    "answer": "suffix",
+    "category": "suffix",
+    "relation": "発表＋会",
     "explanation": "発表をする会を表す。",
-    "structure": "twoOne",
-    "split": "発表｜会"
+    "split": "発表｜会",
+    "categorySet": "three"
   },
   {
-    "id": "L3-美術館",
+    "id": "L4-美術館",
     "word": "美術館",
     "reading": "びじゅつかん",
-    "level": 3,
-    "answer": "美術｜館",
-    "choices": [
-      "美術｜館",
-      "美｜術館"
-    ],
-    "relation": "「美術」＋「館」",
-    "explanation": "美術作品を扱う館を表す。",
-    "structure": "twoOne",
-    "split": "美術｜館"
-  },
-  {
-    "id": "L3-自動化",
-    "word": "自動化",
-    "reading": "じどうか",
-    "level": 3,
-    "answer": "自動｜化",
-    "choices": [
-      "自動｜化",
-      "自｜動化"
-    ],
-    "relation": "「自動」＋「化」",
-    "explanation": "自動に変えることを表す。",
-    "structure": "twoOne",
-    "split": "自動｜化"
-  },
-  {
-    "id": "L4-不可能",
-    "word": "不可能",
-    "reading": "ふかのう",
     "level": 4,
-    "answer": "不｜可能",
-    "choices": [
-      "不｜可能",
-      "不可｜能"
-    ],
-    "relation": "不 ＋ 可能",
-    "explanation": "「不」が「可能」の意味を打ち消し、可能ではないことを表す。",
-    "structureAnswer": "prefixNegation",
-    "relationChoices": [
-      "prefixNegation",
-      "suffixPlace",
-      "suffixEvent",
-      "suffixChange",
-      "suffixQuality"
-    ],
-    "split": "不｜可能"
-  },
-  {
-    "id": "L4-未完成",
-    "word": "未完成",
-    "reading": "みかんせい",
-    "level": 4,
-    "answer": "未｜完成",
-    "choices": [
-      "未｜完成",
-      "未完｜成"
-    ],
-    "relation": "未 ＋ 完成",
-    "explanation": "まだ完成していないことを表す。",
-    "structureAnswer": "prefixNegation",
-    "relationChoices": [
-      "prefixNegation",
-      "suffixPlace",
-      "suffixEvent",
-      "suffixChange",
-      "suffixQuality"
-    ],
-    "split": "未｜完成"
-  },
-  {
-    "id": "L4-無関係",
-    "word": "無関係",
-    "reading": "むかんけい",
-    "level": 4,
-    "answer": "無｜関係",
-    "choices": [
-      "無｜関係",
-      "無関｜係"
-    ],
-    "relation": "無 ＋ 関係",
-    "explanation": "関係がないことを表す。",
-    "structureAnswer": "prefixNegation",
-    "relationChoices": [
-      "prefixNegation",
-      "suffixPlace",
-      "suffixEvent",
-      "suffixChange",
-      "suffixQuality"
-    ],
-    "split": "無｜関係"
-  },
-  {
-    "id": "L4-非公式",
-    "word": "非公式",
-    "reading": "ひこうしき",
-    "level": 4,
-    "answer": "非｜公式",
-    "choices": [
-      "非｜公式",
-      "非公｜式"
-    ],
-    "relation": "非 ＋ 公式",
-    "explanation": "公式ではないことを表す。",
-    "structureAnswer": "prefixNegation",
-    "relationChoices": [
-      "prefixNegation",
-      "suffixPlace",
-      "suffixEvent",
-      "suffixChange",
-      "suffixQuality"
-    ],
-    "split": "非｜公式"
-  },
-  {
-    "id": "L4-図書館",
-    "word": "図書館",
-    "reading": "としょかん",
-    "level": 4,
-    "answer": "図書｜館",
-    "choices": [
-      "図書｜館",
-      "図｜書館"
-    ],
-    "relation": "図書 ＋ 館",
-    "explanation": "図書を扱う場所を表す。",
-    "structureAnswer": "suffixPlace",
-    "relationChoices": [
-      "prefixNegation",
-      "suffixPlace",
-      "suffixEvent",
-      "suffixChange",
-      "suffixQuality"
-    ],
-    "split": "図書｜館"
-  },
-  {
-    "id": "L4-展覧会",
-    "word": "展覧会",
-    "reading": "てんらんかい",
-    "level": 4,
-    "answer": "展覧｜会",
-    "choices": [
-      "展覧｜会",
-      "展｜覧会"
-    ],
-    "relation": "展覧 ＋ 会",
-    "explanation": "展覧を行う集まりを表す。",
-    "structureAnswer": "suffixEvent",
-    "relationChoices": [
-      "prefixNegation",
-      "suffixPlace",
-      "suffixEvent",
-      "suffixChange",
-      "suffixQuality"
-    ],
-    "split": "展覧｜会"
-  },
-  {
-    "id": "L4-国際化",
-    "word": "国際化",
-    "reading": "こくさいか",
-    "level": 4,
-    "answer": "国際｜化",
-    "choices": [
-      "国際｜化",
-      "国｜際化"
-    ],
-    "relation": "国際 ＋ 化",
-    "explanation": "国際的なものに変わることを表す。",
-    "structureAnswer": "suffixChange",
-    "relationChoices": [
-      "prefixNegation",
-      "suffixPlace",
-      "suffixEvent",
-      "suffixChange",
-      "suffixQuality"
-    ],
-    "split": "国際｜化"
+    "answer": "suffix",
+    "category": "suffix",
+    "relation": "美術＋館",
+    "explanation": "美術を扱う館を表す。",
+    "split": "美術｜館",
+    "categorySet": "three"
   },
   {
     "id": "L4-意欲的",
     "word": "意欲的",
     "reading": "いよくてき",
     "level": 4,
-    "answer": "意欲｜的",
-    "choices": [
-      "意欲｜的",
-      "意｜欲的"
-    ],
-    "relation": "意欲 ＋ 的",
-    "explanation": "意欲がある性質を表す。",
-    "structureAnswer": "suffixQuality",
-    "relationChoices": [
-      "prefixNegation",
-      "suffixPlace",
-      "suffixEvent",
-      "suffixChange",
-      "suffixQuality"
-    ],
-    "split": "意欲｜的"
+    "answer": "suffix",
+    "category": "suffix",
+    "relation": "意欲＋的",
+    "explanation": "意欲があるような性質を表す。",
+    "split": "意欲｜的",
+    "categorySet": "three"
+  },
+  {
+    "id": "L4-自動化",
+    "word": "自動化",
+    "reading": "じどうか",
+    "level": 4,
+    "answer": "suffix",
+    "category": "suffix",
+    "relation": "自動＋化",
+    "explanation": "自動になる・自動にする変化を表す。",
+    "split": "自動｜化",
+    "categorySet": "three"
+  },
+  {
+    "id": "L4-市町村",
+    "word": "市町村",
+    "reading": "しちょうそん",
+    "level": 4,
+    "answer": "series",
+    "category": "series",
+    "relation": "市＋町＋村",
+    "explanation": "市・町・村という仲間の一字を並べている。",
+    "split": "市｜町｜村",
+    "categorySet": "three"
+  },
+  {
+    "id": "L4-衣食住",
+    "word": "衣食住",
+    "reading": "いしょくじゅう",
+    "level": 4,
+    "answer": "series",
+    "category": "series",
+    "relation": "衣＋食＋住",
+    "explanation": "衣・食・住という仲間の一字を並べている。",
+    "split": "衣｜食｜住",
+    "categorySet": "three"
   },
   {
     "id": "L5-春夏秋冬",
     "word": "春夏秋冬",
     "reading": "しゅんかしゅうとう",
     "level": 5,
-    "answer": "春｜夏｜秋｜冬",
-    "choices": [
-      "春｜夏｜秋｜冬",
-      "春夏｜秋冬"
-    ],
-    "relation": "春・夏・秋・冬",
-    "explanation": "四つの季節を一字ずつ並べた熟語。",
-    "structure": "oneOneOneOne",
-    "parts": [
-      "春",
-      "夏",
-      "秋",
-      "冬"
-    ]
+    "answer": "series",
+    "category": "series",
+    "relation": "春＋夏＋秋＋冬",
+    "explanation": "春・夏・秋・冬という四つの季節を一字ずつ並べている。",
+    "split": "春｜夏｜秋｜冬",
+    "categorySet": "long"
   },
   {
     "id": "L5-東西南北",
     "word": "東西南北",
     "reading": "とうざいなんぼく",
     "level": 5,
-    "answer": "東｜西｜南｜北",
-    "choices": [
-      "東｜西｜南｜北",
-      "東西｜南北"
-    ],
-    "relation": "東・西・南・北",
-    "explanation": "四つの方角を一字ずつ並べた熟語。",
-    "structure": "oneOneOneOne",
-    "parts": [
-      "東",
-      "西",
-      "南",
-      "北"
-    ]
+    "answer": "series",
+    "category": "series",
+    "relation": "東＋西＋南＋北",
+    "explanation": "東・西・南・北という四つの方角を一字ずつ並べている。",
+    "split": "東｜西｜南｜北",
+    "categorySet": "long"
   },
   {
     "id": "L5-都道府県",
     "word": "都道府県",
     "reading": "とどうふけん",
     "level": 5,
-    "answer": "都｜道｜府｜県",
-    "choices": [
-      "都｜道｜府｜県",
-      "都道｜府県"
-    ],
-    "relation": "都・道・府・県",
-    "explanation": "地方公共団体の種類を一字ずつ並べた熟語。",
-    "structure": "oneOneOneOne",
-    "parts": [
-      "都",
-      "道",
-      "府",
-      "県"
-    ]
+    "answer": "series",
+    "category": "series",
+    "relation": "都＋道＋府＋県",
+    "explanation": "都・道・府・県という種類を一字ずつ並べている。",
+    "split": "都｜道｜府｜県",
+    "categorySet": "long"
   },
   {
     "id": "L5-喜怒哀楽",
     "word": "喜怒哀楽",
     "reading": "きどあいらく",
     "level": 5,
-    "answer": "喜｜怒｜哀｜楽",
-    "choices": [
-      "喜｜怒｜哀｜楽",
-      "喜怒｜哀楽"
-    ],
-    "relation": "喜び・怒り・哀しみ・楽しみ",
-    "explanation": "四つの感情を一字ずつ並べた熟語。",
-    "structure": "oneOneOneOne",
-    "parts": [
-      "喜",
-      "怒",
-      "哀",
-      "楽"
-    ]
+    "answer": "series",
+    "category": "series",
+    "relation": "喜＋怒＋哀＋楽",
+    "explanation": "喜び・怒り・哀しみ・楽しみを一字ずつ並べている。",
+    "split": "喜｜怒｜哀｜楽",
+    "categorySet": "long"
   },
   {
     "id": "L5-株式会社",
     "word": "株式会社",
     "reading": "かぶしきがいしゃ",
     "level": 5,
-    "answer": "株式｜会社",
-    "choices": [
-      "株式｜会社",
-      "株｜式会｜社"
-    ],
-    "relation": "株式 ＋ 会社",
-    "explanation": "「株式」と「会社」という意味のまとまり。",
-    "structure": "twoTwo",
-    "parts": [
-      "株式",
-      "会社"
-    ]
+    "answer": "compound",
+    "category": "compound",
+    "relation": "株式＋会社",
+    "explanation": "「株式」と「会社」という意味のまとまりを組み合わせている。",
+    "split": "株式｜会社",
+    "categorySet": "long"
   },
   {
     "id": "L5-自然科学",
     "word": "自然科学",
     "reading": "しぜんかがく",
     "level": 5,
-    "answer": "自然｜科学",
-    "choices": [
-      "自然｜科学",
-      "自｜然科｜学"
-    ],
-    "relation": "自然 ＋ 科学",
-    "explanation": "「自然」と「科学」という意味のまとまり。",
-    "structure": "twoTwo",
-    "parts": [
-      "自然",
-      "科学"
-    ]
+    "answer": "compound",
+    "category": "compound",
+    "relation": "自然＋科学",
+    "explanation": "「自然」と「科学」という意味のまとまりを組み合わせている。",
+    "split": "自然｜科学",
+    "categorySet": "long"
   },
   {
     "id": "L5-交通安全",
     "word": "交通安全",
     "reading": "こうつうあんぜん",
     "level": 5,
-    "answer": "交通｜安全",
-    "choices": [
-      "交通｜安全",
-      "交｜通安｜全"
-    ],
-    "relation": "交通 ＋ 安全",
-    "explanation": "「交通」と「安全」という意味のまとまり。",
-    "structure": "twoTwo",
-    "parts": [
-      "交通",
-      "安全"
-    ]
+    "answer": "compound",
+    "category": "compound",
+    "relation": "交通＋安全",
+    "explanation": "「交通」と「安全」という意味のまとまりを組み合わせている。",
+    "split": "交通｜安全",
+    "categorySet": "long"
   },
   {
     "id": "L5-読書感想",
     "word": "読書感想",
     "reading": "どくしょかんそう",
     "level": 5,
-    "answer": "読書｜感想",
-    "choices": [
-      "読書｜感想",
-      "読｜書感｜想"
-    ],
-    "relation": "読書 ＋ 感想",
-    "explanation": "「読書」と「感想」という意味のまとまり。",
-    "structure": "twoTwo",
-    "parts": [
-      "読書",
-      "感想"
-    ]
+    "answer": "compound",
+    "category": "compound",
+    "relation": "読書＋感想",
+    "explanation": "「読書」と「感想」という意味のまとまりを組み合わせている。",
+    "split": "読書｜感想",
+    "categorySet": "long"
   },
   {
     "id": "L6-宇宙飛行士",
     "word": "宇宙飛行士",
     "reading": "うちゅうひこうし",
     "level": 6,
-    "answer": "宇宙｜飛行士",
-    "choices": [
-      "宇宙｜飛行士",
-      "宇宙飛行｜士",
-      "宇｜宙飛行士"
-    ],
-    "relation": "宇宙 ＋ 飛行士",
-    "explanation": "宇宙を飛行する人を表す。",
-    "parts": [
-      "宇宙",
-      "飛行士"
-    ]
+    "answer": "compound",
+    "category": "compound",
+    "relation": "宇宙＋飛行士",
+    "explanation": "「宇宙」と「飛行士」という意味のまとまりを組み合わせている。",
+    "split": "宇宙｜飛行士",
+    "categorySet": "long"
   },
   {
     "id": "L6-海水浴客",
     "word": "海水浴客",
     "reading": "かいすいよくきゃく",
     "level": 6,
-    "answer": "海水浴｜客",
-    "choices": [
-      "海水浴｜客",
-      "海水｜浴客",
-      "海｜水浴客"
-    ],
-    "relation": "海水浴 ＋ 客",
-    "explanation": "海水浴に来た客を表す。",
-    "parts": [
-      "海水浴",
-      "客"
-    ]
+    "answer": "compound",
+    "category": "compound",
+    "relation": "海水浴＋客",
+    "explanation": "「海水浴」と「客」という意味のまとまりを組み合わせている。",
+    "split": "海水浴｜客",
+    "categorySet": "long"
   },
   {
     "id": "L6-高速道路網",
     "word": "高速道路網",
     "reading": "こうそくどうろもう",
     "level": 6,
-    "answer": "高速道路｜網",
-    "choices": [
-      "高速道路｜網",
-      "高速｜道路網",
-      "高速道｜路網"
-    ],
-    "relation": "高速道路 ＋ 網",
-    "explanation": "高速道路のつながりを表す。",
-    "parts": [
-      "高速道路",
-      "網"
-    ]
+    "answer": "compound",
+    "category": "compound",
+    "relation": "高速道路＋網",
+    "explanation": "「高速道路」と「網」という意味のまとまりを組み合わせている。",
+    "split": "高速道路｜網",
+    "categorySet": "long"
   },
   {
     "id": "L6-文化交流会",
     "word": "文化交流会",
     "reading": "ぶんかこうりゅうかい",
     "level": 6,
-    "answer": "文化交流｜会",
-    "choices": [
-      "文化交流｜会",
-      "文化｜交流会",
-      "文化交｜流会"
-    ],
-    "relation": "文化交流 ＋ 会",
-    "explanation": "文化交流を行う会を表す。",
-    "parts": [
-      "文化交流",
-      "会"
-    ]
+    "answer": "compound",
+    "category": "compound",
+    "relation": "文化交流＋会",
+    "explanation": "「文化交流」と「会」という意味のまとまりを組み合わせている。",
+    "split": "文化交流｜会",
+    "categorySet": "long"
   },
   {
     "id": "L6-環境保護活動",
     "word": "環境保護活動",
     "reading": "かんきょうほごかつどう",
     "level": 6,
-    "answer": "環境保護｜活動",
-    "choices": [
-      "環境保護｜活動",
-      "環境｜保護活動",
-      "環境保｜護活動"
-    ],
-    "relation": "環境保護 ＋ 活動",
-    "explanation": "環境を保護する活動を表す。",
-    "parts": [
-      "環境保護",
-      "活動"
-    ]
+    "answer": "compound",
+    "category": "compound",
+    "relation": "環境保護＋活動",
+    "explanation": "「環境保護」と「活動」という意味のまとまりを組み合わせている。",
+    "split": "環境保護｜活動",
+    "categorySet": "long"
   },
   {
     "id": "L6-国際協力機関",
     "word": "国際協力機関",
     "reading": "こくさいきょうりょくきかん",
     "level": 6,
-    "answer": "国際協力｜機関",
-    "choices": [
-      "国際協力｜機関",
-      "国際｜協力機関",
-      "国際協｜力機関"
-    ],
-    "relation": "国際協力 ＋ 機関",
-    "explanation": "国際協力に関わる機関を表す。",
-    "parts": [
-      "国際協力",
-      "機関"
-    ]
+    "answer": "compound",
+    "category": "compound",
+    "relation": "国際協力＋機関",
+    "explanation": "「国際協力」と「機関」という意味のまとまりを組み合わせている。",
+    "split": "国際協力｜機関",
+    "categorySet": "long"
   },
   {
     "id": "L6-地域社会活動",
     "word": "地域社会活動",
     "reading": "ちいきしゃかいかつどう",
     "level": 6,
-    "answer": "地域社会｜活動",
-    "choices": [
-      "地域社会｜活動",
-      "地域｜社会活動",
-      "地域社｜会活動"
-    ],
-    "relation": "地域社会 ＋ 活動",
-    "explanation": "地域社会に関わる活動を表す。",
-    "parts": [
-      "地域社会",
-      "活動"
-    ]
+    "answer": "compound",
+    "category": "compound",
+    "relation": "地域社会＋活動",
+    "explanation": "「地域社会」と「活動」という意味のまとまりを組み合わせている。",
+    "split": "地域社会｜活動",
+    "categorySet": "long"
   },
   {
     "id": "L6-自然体験学習",
     "word": "自然体験学習",
     "reading": "しぜんたいけんがくしゅう",
     "level": 6,
-    "answer": "自然体験｜学習",
-    "choices": [
-      "自然体験｜学習",
-      "自然｜体験学習",
-      "自然体｜験学習"
-    ],
-    "relation": "自然体験 ＋ 学習",
-    "explanation": "自然体験を通して行う学習を表す。",
-    "parts": [
-      "自然体験",
-      "学習"
-    ]
+    "answer": "compound",
+    "category": "compound",
+    "relation": "自然体験＋学習",
+    "explanation": "「自然体験」と「学習」という意味のまとまりを組み合わせている。",
+    "split": "自然体験｜学習",
+    "categorySet": "long"
   }
 ];
