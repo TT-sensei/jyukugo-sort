@@ -64,6 +64,8 @@ window.NegativeJukugoGame=class{
       this.ui.wordCard.classList.remove("correct-burst");
       void this.ui.wordCard.offsetWidth;
       this.ui.wordCard.classList.add("correct-burst");
+      const ripple=this.ui.field.querySelector(".correct-ripple");
+      if(ripple){const fr=this.ui.field.getBoundingClientRect(),cr=this.ui.wordCard.getBoundingClientRect();ripple.style.setProperty("--rx",((cr.left+cr.width/2)-fr.left)+"px");ripple.style.setProperty("--ry",((cr.top+cr.height/2)-fr.top)+"px");ripple.classList.remove("active");void ripple.offsetWidth;ripple.classList.add("active");setTimeout(()=>ripple.classList.remove("active"),1150)}
       setTimeout(()=>this.ui.wordCard.classList.remove("correct-burst"),720);
     }else{
       this.combo=0;
@@ -71,10 +73,10 @@ window.NegativeJukugoGame=class{
       this.ui.missStack.insertAdjacentHTML("beforeend",`<span class="chip">${this.q.completed}</span>`);
     }
     this.ui.choices.querySelectorAll("button").forEach(b=>b.disabled=true);
-    const title=ok?"○ 正解":"△ 正しい答え";
-    const answerText=`「${this.q.completed}」`;
+    const title=ok?"正解！":"もう一度考えよう";
+    const relation=`「${this.q.completed}」`;
     this.ui.feedback.className="negative-feedback show "+(ok?"good":"bad");
-    this.ui.feedback.innerHTML=`<strong>${title}</strong><span>${answerText}</span><small>${this.q.explanation}</small>`;
+    this.ui.feedback.innerHTML=`<div class="f-title">${title}</div><div class="f-relation">${relation}</div><div class="f-detail">${ok?"意味を確認":"正しい答えを確認"}<small>${this.q.explanation}</small></div><img class="feedback-navi" src="${NAVI_IDEA_IMAGES[Math.floor(Math.random()*NAVI_IDEA_IMAGES.length)]}" alt="ナビキャラ・考え方を確認">`;
     this.hud();
     setTimeout(()=>this.next(),1700);
   }
