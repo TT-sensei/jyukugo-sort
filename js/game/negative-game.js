@@ -1,4 +1,4 @@
-window.NegativeJukugoGame=class{
+const NEGATIVE_NAVI_IDEA_IMAGES=["https://tt-sensei.github.io/navi-character-/assets/web/characters/riku/expressions/04-idea.webp","https://tt-sensei.github.io/navi-character-/assets/web/characters/sora/expressions/04-idea.webp","https://tt-sensei.github.io/navi-character-/assets/web/characters/kai/expressions/04-idea.webp","https://tt-sensei.github.io/navi-character-/assets/web/characters/saku/expressions/04-idea.webp","https://tt-sensei.github.io/navi-character-/assets/web/characters/tsuki/expressions/04-idea.webp","https://tt-sensei.github.io/navi-character-/assets/web/characters/nami/expressions/04-idea.webp"];window.NegativeJukugoGame=class{
   constructor(ui,onEnd){
     this.ui=ui;
     this.onEnd=onEnd;
@@ -76,7 +76,7 @@ window.NegativeJukugoGame=class{
     const title=ok?"正解！":"もう一度考えよう";
     const relation=`「${this.q.completed}」`;
     this.ui.feedback.className="negative-feedback show "+(ok?"good":"bad");
-    this.ui.feedback.innerHTML=`<div class="f-title">${title}</div><div class="f-relation">${relation}</div><div class="f-detail">${ok?"意味を確認":"正しい答えを確認"}<small>${this.q.explanation}</small></div><img class="feedback-navi" src="${NAVI_IDEA_IMAGES[Math.floor(Math.random()*NAVI_IDEA_IMAGES.length)]}" alt="ナビキャラ・考え方を確認">`;
+    this.ui.feedback.innerHTML=`<div class="f-title">${title}</div><div class="f-relation">${relation}</div><div class="f-detail">${ok?"意味を確認":"正しい答えを確認"}<small>${this.q.explanation}</small></div><img class="feedback-navi" src="${NEGATIVE_NAVI_IDEA_IMAGES[Math.floor(Math.random()*NEGATIVE_NAVI_IDEA_IMAGES.length)]}" alt="ナビキャラ・考え方を確認">`;
     this.hud();
     setTimeout(()=>this.next(),1700);
   }
